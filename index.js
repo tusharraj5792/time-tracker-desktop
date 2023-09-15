@@ -48,9 +48,10 @@ function createWindow() {
     });
   }
   trayWin = win;
-
+  win.webContents.openDevTools()
   win.loadFile("index.html");
-  win.loadURL("http://localhost:3000/");
+  // win.loadURL("http://localhost:3000/");
+  win.loadURL("https://time-tracker-ensuesoft.vercel.app/")
 
   win.webContents.on(
     "new-window",
