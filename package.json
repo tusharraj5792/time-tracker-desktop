@@ -1,0 +1,22 @@
+{
+  "name": "connectexe",
+  "productName": "ConnecteXe",
+  "version": "1.8.0",
+  "description": "ConnecteXe virtual office",
+  "author": "Exceeders <info@exceeders.com> (https://www.exceeders.com/)",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^15.3.7",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-wix-msi": "^3.2.0"
+  },
+  "dependencies": {
+    "active-win": "^8.1.0",
+    "electron-packager": "^15.5.1",
+    "is-online": "^9.0.1"
+  }
+}
