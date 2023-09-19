@@ -28,7 +28,7 @@ function createWindow() {
       nativeWindowOpen: true,
     },
     autoHideMenuBar: true,
-    resizable:false
+    resizable: false,
   });
 
   let isSingleInstance = app.requestSingleInstanceLock();
@@ -48,7 +48,7 @@ function createWindow() {
     });
   }
   trayWin = win;
-  win.webContents.openDevTools()
+  win.webContents.openDevTools();
   win.loadFile("index.html");
   // win.loadURL("http://localhost:3000/");
   win.loadURL("https://time-tracker-ensuesoft.vercel.app/")
@@ -129,7 +129,11 @@ function createWindow() {
       .then((sources) => {
         // console.log(sources[0].thumbnail.toPNG());
         let image = sources[0].thumbnail.toDataURL();
-        win.webContents.send("screenshot:captured", image);
+        win.webContents.send("screenshot:captured", {
+          image: image,
+          taskId: value.taskId,
+          projectId: value.projectId,
+        });
       });
   });
   ipcMain.on("minimizeWindow", (e, value) => {
