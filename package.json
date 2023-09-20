@@ -1,13 +1,14 @@
 {
-  "name": "connectexe",
-  "productName": "ConnecteXe",
-  "version": "1.8.0",
-  "description": "ConnecteXe virtual office",
-  "author": "Exceeders <info@exceeders.com> (https://www.exceeders.com/)",
+  "name": "timetracker",
+  "productName": "TimeTracker",
+  "version": "1.0.1",
+  "description": "TimeTracker", 
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "buildx86": "electron-packager . --platform=win32 --arch=ia32  TimeTracker --icon=assets/img/small-logo.ico --out=build/x86 --f",
+    "buildx64": "electron-packager . --platform=win32 --arch=x64  TimeTracker --icon=assets/img/small-logo.ico --out=build/x64 --f"
   },
   "devDependencies": {
     "electron": "^15.3.7",
@@ -16,7 +17,7 @@
   },
   "dependencies": {
     "active-win": "^8.1.0",
-    "electron-packager": "^15.5.1",
+    "electron-packager": "^16.0.0",
     "is-online": "^9.0.1"
   }
 }
