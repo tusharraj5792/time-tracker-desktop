@@ -77,14 +77,14 @@ For create installer of your app you need to download Wix toolset (https://githu
 ```
 ```bash
 # For 32 bits
-   const OUT_DIR = path.resolve(__dirname,"./TimeTracker 1.0.1 windows_installer_x86"
+   const OUT_DIR = path.resolve(__dirname, "./TimeTracker 1.0.1 windows_installer_x86"
    arch: "x86",
 );
 ```
 
 ```bash
 # For 64 bits
-   const OUT_DIR = path.resolve(__dirname,"./TimeTracker 1.0.1 windows_installer_x64"
+   const OUT_DIR = path.resolve(__dirname, "./TimeTracker 1.0.1 windows_installer_x64"
    arch: "x64",
 );
 ```
@@ -98,7 +98,7 @@ After few time the installer of your is created and you can simple install it.
 
 ## Tech Stack
 
-**Client:** Vite With React Application,Typescript,Electron js,Axios,React Router Dom,React Hook Form,Bootstrap,SASS
+**Client:** Vite With React Application, Typescript, Electron js, Axios, React Router Dom, React Hook Form, Bootstrap, SASS
 
 **Server:** ASP.Net
 
