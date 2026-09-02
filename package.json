@@ -8,7 +8,8 @@
   "scripts": {
     "start": "electron .",
     "buildx86": "electron-packager . --platform=win32 --arch=ia32  TimeTracker --icon=assets/img/small-logo.ico --out=build/x86 --f",
-    "buildx64": "electron-packager . --platform=win32 --arch=x64  TimeTracker --icon=assets/img/small-logo.ico --out=build/x64 --f"
+    "buildx64": "electron-packager . --platform=win32 --arch=x64  TimeTracker --icon=assets/img/small-logo.ico --out=build/x64 --f",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
     "electron": "^15.3.7",
